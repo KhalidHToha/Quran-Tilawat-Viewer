@@ -1,0 +1,105 @@
+/* Full page animated gradient background */
+body {
+  background: linear-gradient(-45deg, #e2dcdc, #dad5d3, #fad0c4, #d3c3c5);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  transition: background-color 0.5s ease;
+  color: #111111;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.dark-mode {
+  color: #f1f1f1;
+}
+
+button,
+input,
+select {
+  background-color: inherit;
+  color: inherit;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  margin: 5px;
+}
+
+.dark-mode button,
+.dark-mode input,
+.dark-mode select {
+  border: 1px solid #444;
+  background-color: #222;
+  color: #eee;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #047857;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.input-group input,
+.input-group button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.input-group button {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.input-group button:hover {
+  background-color: #059669;
+}
+
+.output {
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.arabic {
+  font-size: 1.8rem;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.translation {
+  font-size: 1.2rem;
+  color: #374151;
+  margin-bottom: 15px;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quran Tilawat&Viewer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>📖 AL-Quran Tilawat & Viewer</h1>
+
+    <div class="input-group">
+      <select id="surah">
+        <option value="">🔽 Select Surah</option>
+        <option value="1">1. Al-Fatiha (الفاتحة)</option>
+        <option value="2">2. Al-Baqarah (البقرة)</option>
+        <option value="3">3. Al-i-Imran (آل عمران)</option>
+        <option value="4">4. An-Nisa (النساء)</option>
+        <option value="5">5. Al-Ma'idah (المائدة)</option>
+        <option value="6">6. Al-An'am (الأنعام)</option>
+        <option value="7">7. Al-A'raf (الأعراف)</option>
+        <option value="8">8. Al-Anfal (الأنفال)</option>
+        <option value="9">9. At-Tawbah (التوبة)</option>
+        <option value="10">10. Yunus (يونس)</option>
+        <option value="11">11. Hud (هود)</option>
+        <option value="12">12. Yusuf (يوسف)</option>
+        <option value="13">13. Ar-Ra'd (الرعد)</option>
+        <option value="14">14. Ibrahim (إبراهيم)</option>
+        <option value="15">15. Al-Hijr (الحجر)</option>
+        <option value="16">16. An-Nahl (النحل)</option>
+        <option value="17">17. Al-Isra (الإسراء)</option>
+        <option value="18">18. Al-Kahf (الكهف)</option>
+        <option value="19">19. Maryam (مريم)</option>
+        <option value="20">20. Ta-Ha (طه)</option>
+        <option value="21">21. Al-Anbiya (الأنبياء)</option>
+        <option value="22">22. Al-Hajj (الحج)</option>
+        <option value="23">23. Al-Mu’minun (المؤمنون)</option>
+        <option value="24">24. An-Nur (النور)</option>
+        <option value="25">25. Al-Furqan (الفرقان)</option>
+        <option value="26">26. Ash-Shu'ara (الشعراء)</option>
+        <option value="27">27. An-Naml (النمل)</option>
+        <option value="28">28. Al-Qasas (القصص)</option>
+        <option value="29">29. Al-Ankabut (العنكبوت)</option>
+        <option value="30">30. Ar-Rum (الروم)</option>
+        <option value="31">31. Luqman (لقمان)</option>
+        <option value="32">32. As-Sajda (السجدة)</option>
+        <option value="33">33. Al-Ahzab (الأحزاب)</option>
+        <option value="34">34. Saba (سبإ)</option>
+        <option value="35">35. Fatir (فاطر)</option>
+        <option value="36">36. Ya-Sin (يس)</option>
+        <option value="37">37. As-Saffat (الصافات)</option>
+        <option value="38">38. Sad (ص)</option>
+        <option value="39">39. Az-Zumar (الزمر)</option>
+        <option value="40">40. Ghafir (غافر)</option>
+        <option value="41">41. Fussilat (فصلت)</option>
+        <option value="42">42. Ash-Shura (الشورى)</option>
+        <option value="43">43. Az-Zukhruf (الزخرف)</option>
+        <option value="44">44. Ad-Dukhan (الدخان)</option>
+        <option value="45">45. Al-Jathiya (الجاثية)</option>
+        <option value="46">46. Al-Ahqaf (الأحقاف)</option>
+        <option value="47">47. Muhammad (محمد)</option>
+        <option value="48">48. Al-Fath (الفتح)</option>
+        <option value="49">49. Al-Hujurat (الحجرات)</option>
+        <option value="50">50. Qaf (ق)</option>
+        <option value="51">51. Adh-Dhariyat (الذاريات)</option>
+        <option value="52">52. At-Tur (الطور)</option>
+        <option value="53">53. An-Najm (النجم)</option>
+        <option value="54">54. Al-Qamar (القمر)</option>
+        <option value="55">55. Ar-Rahman (الرحمن)</option>
+        <option value="56">56. Al-Waqi'a (الواقعة)</option>
+        <option value="57">57. Al-Hadid (الحديد)</option>
+        <option value="58">58. Al-Mujadila (المجادلة)</option>
+        <option value="59">59. Al-Hashr (الحشر)</option>
+        <option value="60">60. Al-Mumtahina (الممتحنة)</option>
+        <option value="61">61. As-Saff (الصف)</option>
+        <option value="62">62. Al-Jumu'a (الجمعة)</option>
+        <option value="63">63. Al-Munafiqun (المنافقون)</option>
+        <option value="64">64. At-Taghabun (التغابن)</option>
+        <option value="65">65. At-Talaq (الطلاق)</option>
+        <option value="66">66. At-Tahrim (التحريم)</option>
+        <option value="67">67. Al-Mulk (الملك)</option>
+        <option value="68">68. Al-Qalam (القلم)</option>
+        <option value="69">69. Al-Haqqa (الحاقة)</option>
+        <option value="70">70. Al-Ma'arij (المعارج)</option>
+        <option value="71">71. Nuh (نوح)</option>
+        <option value="72">72. Al-Jinn (الجن)</option>
+        <option value="73">73. Al-Muzzammil (المزمل)</option>
+        <option value="74">74. Al-Muddaththir (المدثر)</option>
+        <option value="75">75. Al-Qiyama (القيامة)</option>
+        <option value="76">76. Al-Insan (الإنسان)</option>
+        <option value="77">77. Al-Mursalat (المرسلات)</option>
+        <option value="78">78. An-Naba (النبأ)</option>
+        <option value="79">79. An-Nazi'at (النازعات)</option>
+        <option value="80">80. Abasa (عبس)</option>
+        <option value="81">81. At-Takwir (التكوير)</option>
+        <option value="82">82. Al-Infitar (الإنفطار)</option>
+        <option value="83">83. Al-Mutaffifin (المطففين)</option>
+        <option value="84">84. Al-Inshiqaq (الانشقاق)</option>
+        <option value="85">85. Al-Buruj (البروج)</option>
+        <option value="86">86. At-Tariq (الطارق)</option>
+        <option value="87">87. Al-A'la (الأعلى)</option>
+        <option value="88">88. Al-Ghashiyah (الغاشية)</option>
+        <option value="89">89. Al-Fajr (الفجر)</option>
+        <option value="90">90. Al-Balad (البلد)</option>
+        <option value="91">91. Ash-Shams (الشمس)</option>
+        <option value="92">92. Al-Lail (الليل)</option>
+        <option value="93">93. Ad-Duhaa (الضحى)</option>
+        <option value="94">94. Ash-Sharh (الشرح)</option>
+        <option value="95">95. At-Tin (التين)</option>
+        <option value="96">96. Al-Alaq (العلق)</option>
+        <option value="97">97. Al-Qadr (القدر)</option>
+        <option value="98">98. Al-Bayyina (البينة)</option>
+        <option value="99">99. Az-Zalzalah (الزلزلة)</option>
+        <option value="100">100. Al-Adiyat (العاديات)</option>
+        <option value="101">101. Al-Qari'a (القارعة)</option>
+        <option value="102">102. At-Takathur (التكاثر)</option>
+        <option value="103">103. Al-Asr (العصر)</option>
+        <option value="104">104. Al-Humazah (الهمزة)</option>
+        <option value="105">105. Al-Fil (الفيل)</option>
+        <option value="106">106. Quraysh (قريش)</option>
+        <option value="107">107. Al-Ma'un (الماعون)</option>
+        <option value="108">108. Al-Kawthar (الكوثر)</option>
+        <option value="109">109. Al-Kafirun (الكافرون)</option>
+        <option value="110">110. An-Nasr (النصر)</option>
+        <option value="111">111. Al-Masad (المسد)</option>
+        <option value="112">112. Al-Ikhlas (الإخلاص)</option>
+        <option value="113">113. Al-Falaq (الفلق)</option>
+        <option value="114">114. An-Nas (الناس)</option>
+      </select>
+
+      <input type="number" id="ayah" placeholder="Ayah No" min="1" />
+      <button onclick="getVerse()">Get Verse</button>
+    </div>
+    <div id="output" class="output hidden">
+      <p id="arabic" class="arabic"></p>
+      <p id="translation-en" class="translation"></p>
+      <p id="translation-bn" class="translation"></p>
+      <audio id="audio" controls></audio>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
