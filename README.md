@@ -2,6 +2,8 @@
 
 View any Quran ayat with Arabic text, English translation, and audio — using the free AlQuran.cloud API.
 
+[VISIT & PLAY](https://khalidhtoha.github.io/Quran-Tilawat-Viewer/)
+
 ## 🔧 Features
 
 - Input Surah and Ayah number
